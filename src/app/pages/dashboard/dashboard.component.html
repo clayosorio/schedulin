@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<p *ngIf="userLoginOn">usuario autorizado</p>
+<p *ngIf="!userLoginOn">usuario no autorizado</p>
+
+<div *ngIf="userLoginOn">
+    <p>Message: {{loginResponse?.message}}</p>
+    <p>Sucess: {{loginResponse?.success}}</p>
+</div>
